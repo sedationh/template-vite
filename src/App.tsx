@@ -1,8 +1,11 @@
+import { Button, Flex, Text } from "@radix-ui/themes"
+
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Flex align="center" justify="center" gap="2" className="h-screen">
+      <Text>Hello from Radix Themes :)</Text>
+      <Button>Let's go</Button>
+    </Flex>
   )
 }
 

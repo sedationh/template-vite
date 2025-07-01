@@ -1,0 +1,51 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 主渐变 -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 内部高光渐变 -->
+    <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="url(#mainGradient)" filter="url(#shadow)"/>
+  
+  <!-- 主要图形 - 现代几何设计 -->
+  <g transform="translate(100,100)">
+    <!-- 中心六边形 -->
+    <polygon points="-20,-35 20,-35 35,-10 20,25 -20,25 -35,-10" 
+             fill="white" 
+             opacity="0.9"/>
+    
+    <!-- 装饰性三角形 -->
+    <polygon points="-10,-15 10,-15 0,-35" 
+             fill="url(#mainGradient)" 
+             opacity="0.8"/>
+    
+    <!-- 底部装饰条 -->
+    <rect x="-15" y="10" width="30" height="8" rx="4" 
+          fill="url(#mainGradient)" 
+          opacity="0.7"/>
+    
+    <!-- 小装饰点 -->
+    <circle cx="-25" cy="-25" r="3" fill="white" opacity="0.6"/>
+    <circle cx="25" cy="-25" r="3" fill="white" opacity="0.6"/>
+    <circle cx="25" cy="25" r="3" fill="white" opacity="0.6"/>
+    <circle cx="-25" cy="25" r="3" fill="white" opacity="0.6"/>
+  </g>
+  
+  <!-- 高光效果 -->
+  <circle cx="100" cy="100" r="85" fill="url(#highlightGradient)" opacity="0.3"/>
+</svg> 

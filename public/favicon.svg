@@ -1,0 +1,39 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGradient)" stroke="url(#borderGradient)" stroke-width="1.5"/>
+  
+  <!-- 主要图形：简化的叶子 -->
+  <path d="M32 12C28 12 24 16 24 20C24 24 28 28 32 32C36 28 40 24 40 20C40 16 36 12 32 12Z" fill="url(#leafGradient)"/>
+  
+  <!-- 叶子纹理 -->
+  <path d="M32 16L32 28" stroke="white" stroke-width="1" opacity="0.4"/>
+  <path d="M28 20L36 20" stroke="white" stroke-width="0.8" opacity="0.3"/>
+  
+  <!-- 装饰性圆点 -->
+  <circle cx="32" cy="38" r="2" fill="url(#accentGradient)" opacity="0.8"/>
+  <circle cx="28" cy="42" r="1.5" fill="url(#accentGradient)" opacity="0.6"/>
+  <circle cx="36" cy="42" r="1.5" fill="url(#accentGradient)" opacity="0.6"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f8ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#98d8c8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7fb3d3;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8e6cf;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#88d8b0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd3b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffaaa5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg> 

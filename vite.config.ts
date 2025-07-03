@@ -1,3 +1,4 @@
+import path from "node:path"
 import react from "@vitejs/plugin-react-swc"
 import { VitePWA } from "vite-plugin-pwa"
 import tailwindcss from "@tailwindcss/vite"
@@ -41,4 +42,9 @@ export default defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 })

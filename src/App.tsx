@@ -1,11 +1,13 @@
-import { Button, Flex, Text } from "@radix-ui/themes"
+import { Button } from "@/components/ui/button"
+import { Apple } from "lucide-react"
 
 function App() {
   return (
-    <Flex align="center" justify="center" gap="2" className="h-screen">
-      <Text>Hello from Radix Themes :)</Text>
-      <Button>Let's go</Button>
-    </Flex>
+    <div className="flex min-h-svh flex-col items-center justify-center">
+      <Button>
+        Click me <Apple />
+      </Button>
+    </div>
   )
 }
 
